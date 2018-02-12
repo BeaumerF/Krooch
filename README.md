@@ -16,6 +16,7 @@ Interested in UWP, I tried to make a first app with original features.
 - [X] Persistence
 - [X] Search text from a picture
 - [ ] Acrylic effect in background (fluent design, creators update)
+- [ ] Pretty interface for pictures (+ scaling of images)
 - [ ] Download pictures button
 - [ ] Search with voice command
 
