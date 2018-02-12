@@ -4,6 +4,7 @@
 ## What does it use?
   - UWP
   - Bing Search API V7
+  - Computer Vision API
   - Realm
 
 ## Why this project ?
