@@ -15,8 +15,9 @@ Interested in UWP, I tried to make a first app with original features.
 - [X] Home page with favorites pictures (double tap to like/unlike)
 - [X] Persistence
 - [X] Search text from a picture
-- [ ] Search with voice command
 - [ ] Acrylic effect in background (fluent design, creators update)
+- [ ] Download pictures button
+- [ ] Search with voice command
 
 ## Can I help you?
 Of course ! By trying to do the tasks of the todo section, by giving advices or by hitting the :star: button !
