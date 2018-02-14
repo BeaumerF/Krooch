@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="epicture.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:epicture"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="142" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0" Fill="Red" />
+
+        <SearchBox Grid.Row="0" x:Name="Box" Margin="60, 0, 180, 0" Height="35" Width="Auto" QuerySubmitted="Box_QuerySubmitted"/>
+        <Button Grid.Row="0" x:Name="HomeButton" Content="Home" IsEnabled="true" Margin="1350, -90, 0, 0" Width="Auto" />
+        <Button Grid.Row="0" x:Name="PickAFileButton" Content="Pick photo" Margin="60, -90, 0, 0" Width="Auto"/>
+        <TextBlock Grid.Row="0" x:Name="OutputTextBlock" Margin="180, 15, 0, 0"/>
+        <ComboBox Grid.Row="0" x:Name="Layout" Margin="60, 100, 0, 0" Width="150">
+            <ComboBoxItem IsSelected="True">All</ComboBoxItem>
+            <ComboBoxItem>Tall</ComboBoxItem>
+            <ComboBoxItem>Wide</ComboBoxItem>
+            <ComboBoxItem>Square</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Row="0" x:Name="PicSize" Margin="240, 100, 0, 0" Width="150">
+            <ComboBoxItem IsSelected="True">All</ComboBoxItem>
+            <ComboBoxItem>Small</ComboBoxItem>
+            <ComboBoxItem>Medium</ComboBoxItem>
+            <ComboBoxItem>Large</ComboBoxItem>
+            <ComboBoxItem>Wallpaper</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Row="0" x:Name="DotType" Margin="420, 100, 0, 0" Width="150">
+            <ComboBoxItem IsSelected="True">All</ComboBoxItem>
+            <ComboBoxItem>AnimatedGif</ComboBoxItem>
+            <ComboBoxItem>Photo</ComboBoxItem>
+            <ComboBoxItem>Transparent</ComboBoxItem>
+        </ComboBox>
+
+        <CheckBox Grid.Row="0" x:Name="LicenseBox" Content="Free" Margin="630, 90, 0, 0" Width="Auto"/>
+        <TextBox Grid.Row="0" x:Name="PicNumber" Text="21" Margin="630, 90, 0, 0" Width="50" Height="1"/>
+        <!--<CheckBox Grid.Row="0" x:Name="imgurCheckBox" Content="imgur" Margin="225, 90, 0, 0" Width="Auto"/>
+        <CheckBox Grid.Row="0" x:Name="flickrCheckBox" Content="flickr" Margin="360, 90, 0, 0" Width="Auto"/>
+        <CheckBox Grid.Row="0" x:Name="pxCheckBox" Content="500px" Margin="495, 90, 0, 0" Width="Auto"/>
+        <CheckBox Grid.Row="0" x:Name="instaCheckBox" Content="instagram" Margin="630, 90, 0, 0" Width="Auto"/>
+        <CheckBox Grid.Row="0" x:Name="bingCheckBox" Content="bing" Margin="765, 90, 0, 0" Width="Auto"/>-->
+
+        <ScrollViewer x:Name ="MyScrollView" HorizontalScrollBarVisibility="Hidden" Grid.Row="1">
+            <StackPanel x:Name="ContentsPanel">
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+    <!--<Grid>
+        
+    </Grid>-->
+
+    
+</Page>
