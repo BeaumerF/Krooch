@@ -1,5 +1,8 @@
+![logoA](./epicture/Assets/kroochlogo.gif)
+![logoB](./epicture/Assets/kroochbar.gif)
+
 # Krooch
-📷 UWP client for Bing Images
+Bing Images client with original features
 
 ## What does it use?
   - UWP
