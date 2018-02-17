@@ -11,10 +11,12 @@ namespace epicture
     class Favorites
     {
         public List<RealmImage> list = new List<RealmImage>();
-        Realm realm = Realm.GetInstance();
+        Realm realm;
 
         public Favorites()
         {
+            realm = Realm.GetInstance();
+            //realm.Dispose();
             var save = realm.All<RealmImage>().ToList<RealmImage>();
 
             foreach (var img in save)
