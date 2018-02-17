@@ -4,6 +4,9 @@
 # Krooch
 Bing Images client with original features
 
+![screenA](./epicture/Assets/screen.png)
+![screenB](./epicture/Assets/screen2.png)
+
 ## What does it use?
   - UWP
   - Bing Search API V7
